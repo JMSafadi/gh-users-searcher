@@ -8,7 +8,6 @@ const Searcher = (props) => {
         setInputUser
     } = props
 
-
     const [valueInput, setValueInput] = useState('');
 
     const onSearchValueChange = (event) => {

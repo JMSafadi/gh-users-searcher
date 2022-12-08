@@ -18,21 +18,21 @@ const LocationInformation = (props) => {
 
     return (
         <>
-            <Grid container spacing={1.5} sx={{
+            <Grid container className='locationInfo' spacing={1.5} sx={{
                 marginTop: '10px',
             }}>
                 <Grid item xs={6}>
                     <Stack direction='row' spacing={2}>
                         <LocationOnIcon/>
-                        <Typography>{location}</Typography>
+                        <Typography className='locationText'>{location}</Typography>
                     </Stack>
                 </Grid>
                 <Grid item xs={6}>
                     <Stack direction='row' spacing={2}>
                         <TwitterIcon/>
                         {twitter_username !== null
-                        ? <Typography>{`@${twitter_username}`}</Typography>
-                        : <Typography>Not avaiable</Typography>
+                        ? <Typography className='locationText'>{`@${twitter_username}`}</Typography>
+                        : <Typography className='locationText'>Not avaiable</Typography>
                         }
                     </Stack>
                 </Grid>
@@ -40,8 +40,8 @@ const LocationInformation = (props) => {
                     <Stack direction='row' spacing={2}>
                         <LanguageIcon/>
                         {blog !== null
-                        ? <a target='_blank' href={blog}><Typography>{blog}</Typography></a>
-                        : <Typography>Not avaiable</Typography>
+                        ? <a target='_blank' href={blog}><Typography className='locationText'>{blog}</Typography></a>
+                        : <Typography className='locationText'>Not avaiable</Typography>
                         }
                     </Stack>
                 </Grid>
@@ -49,8 +49,8 @@ const LocationInformation = (props) => {
                     <Stack direction='row' spacing={2}>
                         <BusinessIcon/>
                         {company !== null
-                        ? <Typography>{company}</Typography>
-                        : <Typography>Not avaiable</Typography>
+                        ? <Typography className='locationText'>{company}</Typography>
+                        : <Typography className='locationText'>Not avaiable</Typography>
                         }
                     </Stack>
                 </Grid>

@@ -3,6 +3,7 @@ import { Container } from '@mui/material'
 import Searcher from './components/Searcher'
 import { getGithubUser } from './services/users'
 import UserCard from './containers/UserCard'
+import './responsive.css'
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
   },[inputUser])
 
   return (
-        <Container sx={{
+        <Container className='container' sx={{
           background: 'whitesmoke',
           width: '80vw',
           height: '500px',

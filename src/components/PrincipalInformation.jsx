@@ -15,10 +15,10 @@ const PrincipalInformation = (props) => {
             <Stack direction='row' sx={{
                 justifyContent: 'space-between'
             }}>
-                <Typography variant='h4'>{name}</Typography>
-                <Typography variant='subtitle2'>{created_at}</Typography>
+                <Typography variant='h4' className='name'>{name}</Typography>
+                <Typography variant='subtitle2' className='createdAt'>{created_at}</Typography>
             </Stack>
-            <Typography variant='caption'>{`@${login}`}</Typography>
+            <Typography variant='caption' className='login'>{`@${login}`}</Typography>
         </>
     );
 }

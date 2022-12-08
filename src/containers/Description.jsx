@@ -15,8 +15,8 @@ const Description = (props) => {
                 justifyContent: 'center'
             }}>
                 {bio !== null
-                ? <Typography variant='body1'>{bio}</Typography>
-                :<Typography variant='body1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin, odio vitae interdum posuere, nisl eros mattis sapien, ut consequat tortor nisl non elit. </Typography>}
+                ? <Typography variant='body1' className='bio'>{bio}</Typography>
+                :<Typography variant='body1' className='bio'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin, odio vitae interdum posuere, nisl eros mattis sapien, ut consequat tortor nisl non elit. </Typography>}
             </Stack>
             <PaperInformation userState={userState} />
             <LocationInformation userState={userState} />
